@@ -187,6 +187,26 @@ a {
     font-size: 1.1rem;
 }
 
+/* Telegram Button */
+.btn-telegram {
+    background: #0088cc;
+    border: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 136, 204, 0.4);
+    width: fit-content;
+}
+
+.btn-telegram:hover {
+    background: #0099e6;
+    box-shadow: 0 0 25px rgba(0, 136, 204, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-telegram i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
 /* Header */
 .navbar {
     position: fixed;
