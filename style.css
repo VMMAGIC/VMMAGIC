@@ -149,6 +149,44 @@ a {
     transform: rotate(360deg);
 }
 
+/* Follow Button (Instagram Theme) */
+.btn-follow {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-follow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.btn-follow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(220, 39, 67, 0.5);
+    border-color: transparent;
+}
+
+.btn-follow:hover::before {
+    opacity: 1;
+}
+
+.btn-follow i {
+    margin-left: 8px;
+    font-size: 1.1rem;
+}
+
 /* Header */
 .navbar {
     position: fixed;
