@@ -207,6 +207,26 @@ a {
     font-size: 1.2rem;
 }
 
+/* Anime File Button */
+.btn-anime-file {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+    width: fit-content;
+}
+
+.btn-anime-file:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    box-shadow: 0 0 25px rgba(102, 126, 234, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-anime-file i {
+    margin-left: 8px;
+    font-size: 1.1rem;
+}
+
 /* Header */
 .navbar {
     position: fixed;
@@ -641,6 +661,70 @@ footer p {
         transform: rotate(18deg) translate(40px, 10px);
         opacity: 0.8;
     }
+}
+
+/* Anime Files Page Styles */
+.anime-files-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 5% 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.files-grid-section {
+    padding: 4rem 5%;
+}
+
+.files-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.file-category-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    border: var(--glass-border);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.file-category-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(138, 43, 226, 0.2);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.file-category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.file-category-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
 }
 
 /* Responsive */
